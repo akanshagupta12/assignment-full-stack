@@ -14,7 +14,7 @@
         border:5px solid lightgrey ;
         margin: auto auto;
         padding: 10px;
-        width: 1200px;
+        width: 100vw;
     }
     #header{
         background-color: gray;
@@ -24,6 +24,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 10px;
         
     }
     #banner{
@@ -34,92 +35,88 @@
         justify-content: center;
         align-items: center;
         color:white;
+        margin-bottom: 20px;
     }
-    #section-2 div{
-        display: inline-block;
+    #section-2{
+        margin: 0px 20px;
+        flex-wrap:wrap;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
     }
-    #circle1{
-        margin-left: 100px;
-        background-color:darkgoldenrod;
-        border-radius: 50%;
-        width: 200px;
-        height:200px;
-        margin-right: 50px;
-        }
-    #circle2{
-        background-color:darkgoldenrod;
-        border-radius: 50%;
-        width: 200px;
-        height:200px;
-        margin-right: 50px;
+    .class1{
+     width:200px;
+     height: 200px;
+     border-radius: 50%;
+     background-color: darkgoldenrod;
+     float: left;
+     margin:0px 20px ;
     }
-    #circle3{
-        background-color:darkgoldenrod;
-        border-radius: 50%;
-        width: 200px;
-        height:200px;
-        margin-right: 50px;
-        }
-    #circle4{
-        background-color:darkgoldenrod;
-        border-radius: 50%;
-        width: 200px;
-        height:200px;
-        margin-right:100px;
+    .section-2:after {
+     content: '';
+     display: block;
+     clear: both;
+     }
+    #section-3{
+        margin:20px 0px;
     }
     #maincontent{
         background-color:gray;
-        height: 250px;
-        width:580px ;
-        margin-right: 20px;
+        height: 220px;
+        width:49% ;
         float: left;
          display: flex;
         justify-content: center;
         align-items: center;
         color: white;
+        margin-bottom: 20px;
         
+    }
+    #articles{
+        height: 240px;
+        width: 49%;
+        float: right;
+        
+    }
+    .class2{
+        background-color:brown;
+        height:60px;
+        margin-bottom:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
     }
     .section-3:after {
      content: '';
      display: block;
      clear: both;
      }
-    #articles{
-        height: 250px;
-        width: 580px;
-        float: right;
-
-    }
-    #article1{
-        background-color:brown;
-        width: auto;
-        height:78px;
-        margin-bottom:8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white; 
-    }
-    #article2{
-        background-color:brown;
-        width: auto;
-        height:78px;
-        margin-bottom:8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white; 
-    }
-    #article3{
-        background-color:brown;
-        width: auto;
-        height:78px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white; 
-    }
     
+    #section-4 {
+        margin: 20px  0px 0px 20px;
+        flex-wrap:wrap;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        
+    }
+    .class3{
+        background-color: orangered;
+        height: 300px;
+        width: 22%;
+        margin-right: 20px;
+        float: left;
+    }
+    .section-4:after {
+     content: '';
+     display: block;
+     clear: both;
+     }
     #footer{
         background-color: plum;
         display: flex;
@@ -129,35 +126,6 @@
         width: auto;
         color: white;
     }
-    #section-4 div{
-            display: inline-block;
-    }
-    #rect1{
-        background-color: orangered;
-        height: 250px;
-        width: 275px;
-        margin-left: 10px;
-        margin-right: 20px;
-    }
-    #rect2
-    {
-        background-color: orangered;
-        height: 250px;
-        width: 275px;
-        margin-right: 20px;
-    }
-    #rect3{
-        background-color: orangered;
-        height: 250px;
-        width: 275px;
-        margin-right: 20px;
-    }
-    #rect4{
-        background-color: orangered;
-        height: 250px;
-        width: 275px;
-        margin-right: 1.5px;
-    }
 </style>
 <body>
     <div id="container">
@@ -165,28 +133,28 @@
         <div id="header">Header</div>
         <div id="banner">Banner</div>
        </div>
-       <h3 style="padding-top: 20px;padding-bottom: 20px;text-align: center;">Section-1</h3>
-       <div id="section-2">
-           <div id="circle1"></div>
-           <div id="circle2"></div>
-           <div id="circle3"></div>
-           <div id="circle4"></div>
+       <h3 align="center">Section-1</h3>
+       <div id="section-2" >
+           <div id="circle1"class="class1"></div>
+           <div id="circle2"class="class1"></div>
+           <div id="circle3"class="class1"></div>
+           <div id="circle4"class="class1"></div>
        </div>
-       <h3 style="padding-bottom: 20px;text-align: center;">Section-2</h3>
+       <h3 style="text-align: center;">Section-2</h3>
        <div id="section-3">
            <div id="maincontent">Main content</div>
            <div id="articles">
-               <div id="article1">Artical-1</div>
-               <div id="article2">Artical-2</div>
-               <div id="article3">Artical-3</div>
+               <div id="article1"class="class2">Artical-1</div>
+               <div id="article2"class="class2">Artical-2</div>
+               <div id="article3"class="class2">Artical-3</div>
            </div>
-       </div>
-       <h3 style="padding-top: 20px;padding-bottom: 20px;text-align: center;background-color: yellow;">Section-3</h3>
+        </div>
+        <h3 style="text-align: center;">Section-3</h3>
        <div id="section-4">
-           <div id="rect1"></div>
-           <div id="rect2"></div>
-           <div id="rect3"></div>
-           <div id="rect4"></div>
+           <div id="rect1"class="class3"></div>
+           <div id="rect2"class="class3"></div>
+           <div id="rect3"class="class3"></div>
+           <div id="rect4"class="class3"></div>
        </div>
        <h3 style="padding-top: 20px;padding-bottom: 20px;text-align: center;">Section-4</h3>
         <div id="footer">Footer</div>
