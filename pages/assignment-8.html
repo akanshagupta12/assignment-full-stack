@@ -87,13 +87,12 @@
         margin-bottom: 20px;
         text-align: justify;
         overflow: hidden;
-        padding: 0px 10px;
+        padding:10px;
     }
     #articles{
-        height: 300px;
+        height: 360px;
         width: 49%;
         float: right;
-        
     }
     .class2 img{
         height:100px;
@@ -107,31 +106,44 @@
      }
     
     #section-4 {
-        margin: 20px  0px 0px 20px;
+        margin-top:20px;
         display: flex;
         justify-content: center;
         align-items: center;  
+        width: 100%;
+        margin-bottom:20px ;
     }
     .class3{
-        height: 300px;
-        width: 18%;
-        margin-right:50px;
+        width:20%;
+        margin-right:80px;
         float: left;
+
     }
     .section-4:after {
      content: '';
      display: block;
      clear: both;
      }
+    .class3 a{
+     display: block;
+            background-color: red;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            }
+    .class3 img{
+        height: 150px;
+        width: 100%;
+    }
+
     .footer{
         background-color: plum;
         display: flex;
         justify-content: center;
         align-items: center; 
-        height: 80px;
-    }
-    .footer div{
-        color: black;
+        height: 40px;
     }
 </style>
 <body>
@@ -159,7 +171,7 @@
        <div id="section-3">
            <div id="maincontent">
                <h3>About Project</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eaque similique ducimus natus maiores voluptates quasi ipsum aliquam incidunt recusandae? Numquam doloribus sequi, quas nulla aut veritatis mollitia sed obcaecati, ullam vero soluta eveniet laudantium tempora expedita nesciunt repudiandae nobis, voluptatum architecto. Modi reprehenderit voluptatum beatae dicta vitae corporis quas aliquid rerum distinctio consequatur dolorem animi nihil totam, unde, assumenda nulla rem a necessitatibus quidem? Dicta at quas soluta aspernatur possimus maiores, pariatur iusto laudantium mollitia consectetur nam cupiditate esse commodi aliquid corporis molestiae officiis repellat quam atque rerum sit dignissimos eos exercitationem! Sapiente repellat, saepe quia aut suscipit aspernatur nulla. Quasi praesentium doloremque accusamus deleniti aut neque vitae magni non labore similique in suscipit nostrum qui sed iure, tenetur dolores facere? Quam deserunt repudiandae officia exercitationem enim pariatur magnam. Eum officiis reiciendis vero id tempore nam facilis impedit, explicabo magnam ducimus ipsa! Vel magni ut facilis enim voluptatum sed.</p>    
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eaque similique ducimus natus maiores voluptates quasi ipsum aliquam incidunt recusandae? Numquam doloribus sequi, quas nulla aut veritatis mollitia sed obcaecati, ullam vero soluta eveniet laudantium tempora expedita nesciunt repudiandae nobis, voluptatum architecto. Modi reprehenderit voluptatum beatae dicta vitae corporis quas aliquid rerum distinctio consequatur dolorem animi nihil totam, unde, assumenda nulla rem a necessitatibus quidem? Dicta at quas soluta aspernatur possimus maiores, pariatur iusto laudantium mollitia consectetur nam cupiditate esse commodi aliquid corporis molestiae officiis repellat quam atque rerum sit dignissimos eos exercitationem! Sapiente repellat, saepe quia aut suscipit aspernatur nulla. Quasi praesentium doloremque accusamus deleniti aut neque vitae magni non labore similique in suscipit nostrum qui sed iure, tenetur dolores facere? Quam deserunt repudiandae officia exercitationem enim pariatur magnam. Eum officiis reiciendis vero id tempore nam facilis impedit, explicabo magnam ducimus ipsa! Vel magni ut facilis enim voluptatum sed.</p>    
             </div>
            <div id="articles">
                <div class="class2"><img src="../imgs/p1.jpg" alt=""></div>
@@ -167,16 +179,38 @@
                <div class="class2"><img src="../imgs/p3.jpg" alt=""></div>
            </div>
         </div>
-        <h3 style="text-align: center;">Section-3</h3>
+        <h3 style="text-align: center;">Technologies</h3>
        <div id="section-4">
-           <div class="class3"></div>
-           <div class="class3"></div>
-           <div class="class3"></div>
-           <div class="class3"></div>
+           <div class="class3">
+               <img src="../imgs/html.png">
+        <h3>Introduction to HTML</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, reiciendis?Deleniti voluptatum nobis assumenda, explicabo sunt odio impedit cumque consequatur sit voluptate eum? </p>
+        <a href="html introd.html">Read More</a>
+    </div>
+           <div class="class3">
+               <img src="../imgs/css.svg">
+            <h3>Introduction to CSS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, reiciendis?Deleniti voluptatum nobis assumenda, explicabo sunt odio impedit cumque consequatur sit voluptate eum? </p>
+            <a href="css intro.html">Read More</a>
+        </div>
+           <div class="class3">
+            <img src="../imgs/javascript.png">
+            <h3>Introduction to JavaScript</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, reiciendis?Deleniti voluptatum nobis assumenda, explicabo sunt odio impedit cumque consequatur sit voluptate eum?</p>
+            <a href="javascript intro.html">Read More</a>
+           </div>
+           <div class="class3">
+            <img src="../imgs/bootstrap.png">
+            <h3>Introduction to Bootstrap</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, reiciendis?Deleniti voluptatum nobis assumenda, explicabo sunt odio impedit cumque consequatur sit voluptate eum?</p>
+            <a href="bootstrap.html">Read More</a>
+           </div>
        </div>
        <h3 style="padding-top: 20px;padding-bottom: 20px;text-align: center;">Contact</h3>
-        <div class="footer"><p>Website Template for Practical-8 ©<a href="https://www.beta-labs.in/">Beta-labs</a></p>
-        <p><a href="">back to top</a></p> </div>
+        <div class="footer"><p>Website Template for Practical-8 ©<a  href="https://www.beta-labs.in/">Beta-labs</a></p></div>
+        <div class="footer">
+        <a href="">back to top</a>
         </div>
+    </div>
 </body>
 </html>
