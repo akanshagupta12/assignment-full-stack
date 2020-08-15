@@ -18,47 +18,56 @@
     }
     ul{
         background-color: gray;
-        height: 50px;
-        color:white;
+        height: 140px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 10px;
     }
     ul li{
-        display: inline-block;
+        display: inline-block;    
+    }
+    ul li a{
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        width: 140px;
+        padding: 30px;
+        color:white;
+        font-weight: bold;
+        font-size: larger;
+       
     }
     ul li a:hover{
          background-color: white;
-         color: black;
-         display: block;
-         padding: 50px;
-         
+         color: black;       
     }
     #banner{
-        background-color: lightskyblue;
-        width: auto;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:white;
+        position: relative;
+    }
+    #banner img{
+        width: 100%;
+        height: 500px;
+        display: block;
         margin-bottom: 20px;
+    }
+    #banner h1{
+        position:absolute;
+        top:30px;
+        left:30px;
+        color:white;
+        font-size:xx-large;
     }
     #section-2{
-        margin: 0px 20px;
-        flex-wrap:wrap;
-        flex-direction: row;
+        margin: 0px 80px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 20px;
     }
-    .class1{
+    .class1 img{
      width:200px;
      height: 200px;
      border-radius: 50%;
-     background-color: darkgoldenrod;
      float: left;
      margin:0px 20px ;
     }
@@ -72,30 +81,24 @@
     }
     #maincontent{
         background-color:gray;
-        height: 220px;
+        height: 340px;
         width:49% ;
         float: left;
-         display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
         margin-bottom: 20px;
-        
+        text-align: justify;
+        overflow: hidden;
+        padding: 0px 10px;
     }
     #articles{
-        height: 240px;
+        height: 300px;
         width: 49%;
         float: right;
         
     }
-    .class2{
-        background-color:brown;
-        height:60px;
+    .class2 img{
+        height:100px;
         margin-bottom:20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
+        width:100%;
     }
     .section-3:after {
      content: '';
@@ -105,17 +108,12 @@
     
     #section-4 {
         margin: 20px  0px 0px 20px;
-        flex-wrap:wrap;
-        flex-direction: row;
         display: flex;
         justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-        
+        align-items: center;  
     }
     .class3{
-        background-color: orangered;
-        height: 340px;
+        height: 300px;
         width: 18%;
         margin-right:50px;
         float: left;
@@ -125,14 +123,15 @@
      display: block;
      clear: both;
      }
-    #footer{
+    .footer{
         background-color: plum;
         display: flex;
         justify-content: center;
         align-items: center; 
-        height: 50px;
-        width: auto;
-        color: white;
+        height: 80px;
+    }
+    .footer div{
+        color: black;
     }
 </style>
 <body>
@@ -145,22 +144,27 @@
             <li><a href="">TECHNOLOGIES</a></li>
             <li><a href="">CONTACT</a></li>
         </ul>
-        <div id="banner">Banner</div>
+        <div id="banner"><img src="../imgs/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="">
+            <h1>PRACTICAL-8</h1>
+        </div>
        </div>
-       <h3 align="center">Section-1</h3>
+       <h3 align="center">Team Members</h3>
        <div id="section-2" >
-           <div class="class1"></div>
-           <div class="class1"></div>
-           <div class="class1"></div>
-           <div class="class1"></div>
+           <div class="class1"><img src="../imgs/1.png" alt=""></div>
+           <div class="class1"><img src="../imgs/2.png" alt=""></div>
+           <div class="class1"><img src="../imgs/3.png" alt=""></div>
+           <div class="class1"><img src="../imgs/9.png" alt=""></div>
        </div>
        <h3 style="text-align: center;">Section-2</h3>
        <div id="section-3">
-           <div id="maincontent">Main content</div>
+           <div id="maincontent">
+               <h3>About Project</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eaque similique ducimus natus maiores voluptates quasi ipsum aliquam incidunt recusandae? Numquam doloribus sequi, quas nulla aut veritatis mollitia sed obcaecati, ullam vero soluta eveniet laudantium tempora expedita nesciunt repudiandae nobis, voluptatum architecto. Modi reprehenderit voluptatum beatae dicta vitae corporis quas aliquid rerum distinctio consequatur dolorem animi nihil totam, unde, assumenda nulla rem a necessitatibus quidem? Dicta at quas soluta aspernatur possimus maiores, pariatur iusto laudantium mollitia consectetur nam cupiditate esse commodi aliquid corporis molestiae officiis repellat quam atque rerum sit dignissimos eos exercitationem! Sapiente repellat, saepe quia aut suscipit aspernatur nulla. Quasi praesentium doloremque accusamus deleniti aut neque vitae magni non labore similique in suscipit nostrum qui sed iure, tenetur dolores facere? Quam deserunt repudiandae officia exercitationem enim pariatur magnam. Eum officiis reiciendis vero id tempore nam facilis impedit, explicabo magnam ducimus ipsa! Vel magni ut facilis enim voluptatum sed.</p>    
+            </div>
            <div id="articles">
-               <div class="class2">Artical-1</div>
-               <div class="class2">Artical-2</div>
-               <div class="class2">Artical-3</div>
+               <div class="class2"><img src="../imgs/p1.jpg" alt=""></div>
+               <div class="class2"><img src="../imgs/p2.jpeg" alt=""></div>
+               <div class="class2"><img src="../imgs/p3.jpg" alt=""></div>
            </div>
         </div>
         <h3 style="text-align: center;">Section-3</h3>
@@ -170,8 +174,9 @@
            <div class="class3"></div>
            <div class="class3"></div>
        </div>
-       <h3 style="padding-top: 20px;padding-bottom: 20px;text-align: center;">Section-4</h3>
-        <div id="footer">Footer</div>
-    </div>
+       <h3 style="padding-top: 20px;padding-bottom: 20px;text-align: center;">Contact</h3>
+        <div class="footer"><p>Website Template for Practical-8 ©<a href="https://www.beta-labs.in/">Beta-labs</a></p>
+        <p><a href="">back to top</a></p> </div>
+        </div>
 </body>
 </html>
